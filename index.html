@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Fireman Calendar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+  <h1>🔥 FIREMAN CALENDAR 🔥</h1>
+  <div class="status"><span id="target">FIND: #1</span><span id="hearts">♥ ♥ ♥</span></div>
+  <div class="game-row">
+    <aside id="calendar" aria-label="Calendar progress"></aside>
+    <canvas id="game" width="720" height="480"></canvas>
+    <aside id="message" class="message-rail">Collect the firemen in calendar order.</aside>
+  </div>
+  <button id="restart">RESTART</button>
+</main>
+
+<div id="intro" class="overlay">
+  <section class="panel">
+    <h2>🔥 FIREMAN CALENDAR 🔥</h2>
+    <p>You are the photographer for the Hot Fireman Calendar.</p>
+    <p>Unfortunately, your models are all out in the field, so you're going to have to chase them down...</p>
+    <p><strong>IN ORDER.</strong></p>
+    <p>Collect all 12 firefighters, from Mr January to Mr December.</p>
+    <div class="instructions">
+      <p><b>ARROW KEYS / WASD</b> — Move</p>
+      <p><b>📷 CAMERA</b> — Find five new models</p>
+      <p><b>🔥 FIRE</b> — Hurts</p>
+      <p><b>💦 WATER</b> — Shoves</p>
+      <p><b>❤️ HEART</b> — Restores one life (maximum 3)</p>
+    </div>
+    <p>Can't find the month you need?<br>Grab the camera and reshuffle the models.</p>
+    <button id="start">START CALENDAR</button>
+  </section>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
